@@ -45,13 +45,23 @@ And here is our new user.
 You should be able to login via command line by now. 
 
 ## Pymysql
-A software connector between python and mysql database will be introduced here. \
+A software connector between python and mysql database will be introduced here. 
 > $pip3 install pymysql
 
 Clone example repo: 
 > $cd ~/Desktop \
 > $git clone https://github.com/wildcat5566/Automation_mysql.git \
-> $python3 ./Automation_mysql/pymysqltest.py
+> $cd ~/Automation_mysql \
+> $nano pymysqltest.py
+
+Take a look at example code: 
+![alt text](./scrot/pymysql.JPG)
+
+First line imports module. \
+Second line creates connection object 'conn' towards server held at localhost, logging in as user and password we've just set. \
+Third line executes SQL command which is to create a new database named 'newdb'.
+
+> $python3 pymysqltest.py
 
 This example creates a database under the mysql server. \
 Now check again: 
